@@ -1,0 +1,132 @@
+.checkbox-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.checkbox-item {
+  width: 250px;
+  border: 2px solid #eeecec;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.checkbox-item.active {
+  border-color: pink;
+  
+}
+
+.checkbox-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.checkbox-item h3 {
+  margin-top: 10px;
+}
+
+.checkbox-item .hidden-text {
+  display: none;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-custom {
+  
+  position: absolute;
+  top: 0;
+  left: 1;
+  height: 15px;
+  width: 15px;
+  
+  background-color: #fefbfe;
+  border:1px solid #9b9b9b;
+  border-radius: 13px;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  background-color: #de2283;
+}
+
+.checkbox-custom:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-item.active img {
+  transform: translateY(-30%);
+}
+
+.checkbox-item.active .hidden-text {
+  display: block;
+}
+
+.end-text-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.end-text-content {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.end-text {
+  margin-bottom: 10px;
+  display: none;
+}
+
+.end-button {
+  padding: 8px 40px;
+  background-color: #f01d6a;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.back-button{
+  text-decoration: none;
+  background-color: #a6a2a4;
+  color: black;
+  width: 25px;
+height: 25px;
+border-radius: 5px;
+
+}
+.back {
+  text-decoration: none;
+}
+.dribbble-text {
+  font-family: 'Parisienne', cursive;
+  color: rgb(240, 51, 123);
+}
